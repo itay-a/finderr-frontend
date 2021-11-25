@@ -1,0 +1,113 @@
+.gig-preview {
+    text-align: left;
+    border: 1px solid #e6e6e6;
+
+    .gig-img {
+        @include aspect-ratio(2, 1.25);
+    }
+
+    .gig-description {
+        > * {
+            padding: 0px 12px;
+        }
+        .seller-info {
+            margin-bottom: 8px;
+            margin-top: 8px;
+            span {
+                padding-right: 12px;
+            }
+        }
+        .gig-title {
+            min-height: 47px;
+
+            a {
+                color: $clr9;
+                transition: 0.4s;
+                h4 {
+                    line-height: 1.5;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    color: #222325;
+                    font-weight: 500;
+                }
+            }
+        }
+        .gig-info {
+            margin-top: 10px;
+            .rate{
+                margin-left: 2px;
+                color: #ffbe5b;
+                font-weight: 700;
+                font-size: 15px;
+            }
+            .rate-count{
+                color: #b5b6ba;
+                font-size: 15px;
+
+            }
+
+            > * {
+                border: none;
+            }
+        }
+        footer {
+            padding: 0;
+            border-top: 1px solid #e6e6e6;
+            .gig-price {
+                padding: 10px 12px;
+                .flex {
+                    display: flex;
+                    flex-direction: row;
+                    .price-txt {
+                        font-size: small;
+                        color: rgb(149, 149, 149);
+                        text-align: right;
+                        font-size: smaller;
+                        margin-top: 5px;
+                        margin-right: 10px;
+                        font-weight: 700;
+                    }
+
+                    .price {
+                        font-size: large;
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        .gig-title {
+            a {
+                color: $clr2;
+            }
+        }
+    }
+
+    .delete-gig {
+        background-color:red;
+        color:white;
+        padding: 2px;
+        border-radius: 5px;
+        min-width: 60px;
+        margin-right: 5px;
+    }
+    .delete-gig:hover{
+        background-color:rgb(245, 161, 161);
+
+    }
+    
+    .edit-gig {
+        background-color:$clr2;
+        color:white;
+        padding: 2px;
+        border-radius: 5px;
+        min-width: 60px;
+    }
+
+    .edit-gig:hover{
+        background-color:rgb(130, 241, 130);
+
+    }
+}

@@ -1,0 +1,90 @@
+.app-footer-container {
+    border-top: 1px solid lightgray;
+
+    .app-footer {
+        background-color: rgb(255, 255, 255);
+        color: $clr4;
+        text-align: center;
+        padding-bottom: 24px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 0;
+
+        .footer-upper-menu {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .content {
+                line-height: 32px;
+                a {
+                    color: #a6a8aa;
+                    font-size: 16px;
+                }
+            }
+            h6 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(64, 65, 69);
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+
+        .footer-bottom-line {
+            display: flex;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid lightgray;
+            padding-top: 20px;
+        }
+
+        .footer-left {
+            display: flex;
+            position: relative;
+        }
+
+        .footer-right {
+            display: flex;
+            span {
+                line-height: 38.4px;
+                margin-right: 32px;
+            }
+            span:hover {
+                color: green;
+            }
+        }
+
+        .ltd {
+            margin-top: 12px;
+            line-height: 38.4px;
+            color: grey;
+        }
+
+        h3 {
+            margin: 0px;
+            line-height: 38.4px;
+        }
+
+        .footer-logo {
+            margin-right: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 34px;
+            color: gray;
+        }
+
+        p {
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        span {
+            font-size: 22px;
+            color: grey;
+            cursor: pointer;
+        }
+    }
+}

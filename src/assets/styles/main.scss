@@ -1,0 +1,50 @@
+// Setup
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+@import "setup/typography";
+
+// Basics
+
+@import "basics/reset";
+@import "basics/helpers";
+@import "basics/layout";
+@import "basics/base";
+@import "basics/links";
+@import "basics/forms";
+
+
+// Views
+@import "views/about-us";
+@import "views/home-page";
+@import "views/gig-app";
+@import "views/review-app";
+@import "views/gig-details";
+@import "views/explore-page";
+@import "views/seller-page";
+
+
+// Components
+@import "cmps/app-header";
+@import "cmps/home-hero";
+@import "cmps/user-msg";
+@import "cmps/carusel";
+@import "cmps/app-modal";
+
+@import "cmps/app-footer";
+@import "cmps/gig-add";
+@import "cmps/gig-edit";
+@import "cmps/login-signup";
+
+@import "cmps/gig-preview";
+@import "cmps/trusted-bar";
+@import "cmps/search-input";
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+.modal-app {
+    z-index: 3;
+    input {
+        font-size: 20px;
+        border: 1px solid brown;
+    }
+
+    select {
+        font-size: 10px;
+    }
+
+    button {
+        color: white;
+        border-radius: 5px;
+        background-color: #1dbf73;
+    }
+
+    .btn-link {
+        background-color: #1dbf73;
+        border-radius: 5px;
+    }
+}

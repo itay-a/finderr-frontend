@@ -1,0 +1,78 @@
+.hero-container {
+    height: 730px;
+    animation: hero-models 25s infinite;
+    transition: all 0.2s ease-in-out;
+
+    @keyframes hero-models {
+        0% {
+            background-image: url("../../img/model1.jpg");
+        }
+        33% {
+            background-image: url("../../img/model4.jpg");
+        }
+        66% {
+            background-image: url("../../img/model2.jpg");
+        }
+        100% {
+            background-image: url("../../img/model3.jpg");
+        }
+    }
+
+    img {
+        size: 100%;
+        object-fit: cover;
+    }
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    & .hero-content {
+        margin-block-start: 270px;
+        color: white;
+
+        & header {
+            margin-bottom: 20px;
+            font-size: 2.5vw;
+            line-height: 1.8vw;
+            font-weight: 700px;
+        }
+
+        .search-input-container {
+            position: relative;
+            max-width: 40vw;
+            .search-input-content {
+                button {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .hero-popular {
+            padding-top: 24px;
+            & ul {
+                margin-left: 12px;
+                & a {
+                    border: 1px solid white;
+                    border-radius: 25px;
+                    padding: 1px 18px;
+                    margin-right: 12px;
+                    &:hover {
+                        color: rgb(31, 31, 31);
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    @font-face {
+        font-family: "domaine";
+        src: url("../../font/domaine.ttf");
+    }
+
+    .freelanse {
+        font-family: domaine;
+        font-style: italic;
+        font-weight: 500;
+    }
+}

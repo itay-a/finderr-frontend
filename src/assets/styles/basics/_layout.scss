@@ -1,0 +1,39 @@
+.main-container {
+    display: grid;
+    grid-template-columns:
+        1fr
+        minmax(auto, $normal-breakpoint)
+        1fr;
+
+    > * {
+        grid-column: 2;
+    }
+
+    @include for-narrow-layout {
+        grid-template-columns:
+            minmax(32px, 1fr)
+            minmax(auto, $narrow-breakpoint + 300)
+            minmax(32px, 1fr);
+    }
+    @include for-normal-layout {
+        grid-template-columns:
+            minmax(32px, 1fr)
+            minmax(auto, $normal-breakpoint)
+            minmax(32px, 1fr);
+    }
+    @include for-wide-layout {
+        grid-template-columns:
+            minmax(32px, 1fr)
+            minmax(auto, $normal-breakpoint)
+            minmax(32px, 1fr);
+    }
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 24px;
+    //  * {
+    //     @include aspect-ratio(1, 1);
+    // }
+}

@@ -1,0 +1,51 @@
+.login-page {
+    select {
+        display: inline-block;
+        border: none;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        padding-left: 10px;
+        box-shadow: rgb(212, 212, 212) 2px 1px 1px;
+        color: rgb(105, 105, 105);
+        margin-bottom: 14px;
+        border: 1px solid rgb(200, 200, 200);
+        height: 40px;
+
+        option {
+            margin: 10px;
+        }
+    }
+    input {
+        padding-left: 10px;
+        box-shadow: rgb(212, 212, 212) 2px 1px 1px;
+        color: rgb(105, 105, 105);
+        margin-bottom: 14px;
+        border: 1px solid rgb(200, 200, 200);
+        height: 40px;
+    }
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+            background-color: rgb(36, 179, 112);
+            color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            padding: 12px 28px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            text-decoration: none;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: #1d8d43;
+                color: white;
+            }
+        }
+}

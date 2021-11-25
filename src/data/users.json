@@ -1,0 +1,35 @@
+[
+    {
+        "_id": "u101",
+        "fullname": "michael jordan",
+        "imgUrl": "/img/img1.jpg",
+        "username": "goat",
+        "password": "secret",
+        "isSeller": true,
+        "sellerLevel":2,
+        "numberOfOrders":45,
+        "rating":4.9,
+        "about":"I am a computer science graduate who loves to learn new skills and provide quality work to clients.",
+        "from":"usa",
+        "reviews": [
+            {
+                "id": "madeId",
+                "txt": "create an amazing app!!!",
+                "rate": 4,
+                "by": {
+                    "_id": "u102",
+                    "fullname": "user2",
+                    "imgUrl": "/img/img2.jpg"
+                }
+            }
+        ]
+    },
+    {
+        "_id": "u102",
+        "fullname": "kobe bryant",
+        "imgUrl": "/img/img2.jpg",
+        "isSeller": false,
+        "username": "Black Mamba",
+        "password": "secret"
+    }
+]
